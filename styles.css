@@ -113,16 +113,47 @@ body {
     padding: 1rem;
 }
 
-.app-donwload {
+.app-download {
     height: 3rem;
     width: 10rem;
     background-size: cover;
 }
 
 .app-download:nth-child(1) {
-    background-image: url(D:\Python\Bootcamp\InstagramCopy\instacopy\img\apple-button.png);
+    background-image: url(./img/apple-button.png);
 }
 
 .app-download:nth-child(2) {
-    background-image: url(D:\Python\Bootcamp\InstagramCopy\instacopy\img\googleplay-button.png);
+    background-image: url(./img/googleplay-button.png);
+}
+
+/* media queries para tab e celular */
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
 }
